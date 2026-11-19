@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adam</title>
+</head>
+<body>
+    <header>
+        <button onclick="location.href='index.html'">Strona Główna</button>
+        <button onclick="location.href='about.html'">O mnie</button>
+        <button onclick="location.href='contact.html'">Kontakt</button>
+    </header><br><hr>
+    <section class="divy">
+        <div id="div-1">
+            <h3 id="tekst">Kot</h3>
+            <img src="cat-fat.gif" alt="Kot" width="300" onclick="enlarge(this)">
+            <h4>Jest to kot o raczej wiekszym rozmiarze <br>wyróżnia się swoim rudym futrem i agresją</h4>
+        </div>
+        <div id="div-2">
+            <h3>Poduszka</h3>
+            <img src="poduszka.png" alt="poduszka" width="300" onclick="enlarge(this)">
+            <h4>To najepsza poduszka na świecie <br> Naprawde</h4>
+        </div>
+        <div id="div-3">
+            <h3>Mussolini</h3>
+            <img src="mussolini67.jpg" alt="" width="280" height="400" onclick="enlarge(this)">
+            <h4>Benito dokonujący słynne <br> "67"</h4>
+        </div>
+    </section>
+    <script>
+        function enlarge(image) {
+            image.style.transition = "transform 0.5s ease-in-out";
+            image.style.transform = "scale(1.5)";
+            if (image.style.transform === "scale(1.5)") {
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>

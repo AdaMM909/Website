@@ -1,0 +1,92 @@
+body {
+    background-color: #1d1f20;
+}
+
+button {
+    width: 14%;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    transition : background-color 0.4s ease-in-out;
+    border-radius: 15px;
+    background-color: #4a4b4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 9px #3a3939;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+button:hover {
+    background-color: #283a29;
+    border: 1px solid #4a4b4b;
+    padding: 2px;
+}
+
+button:active {
+    background-color: #202c21;
+    box-shadow: 0 5px #3a3939;
+    transform: translateY(4px);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#li.left {
+    float: left;
+    margin-left: 10px;
+}
+
+#li.center {
+    float: center;
+}
+
+#li.right {
+    float: right;
+}
+
+#div-1, #div-2, #div-3 {
+    color: wheat;
+    width: 33%;
+    margin-top: 150px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+img {
+    border-radius: 15px;
+    border: 2px solid #727272;
+}
+
+h3 {
+    background-color: #324634;
+    padding:  10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 7px;
+}
+
+#ja {
+    text-align: center;
+    color: white;
+}
+
+#selfie {
+    transition: transform 1s ease-in-out;
+}
+
+#email {
+    padding-top: 250px;
+    font-size: 100px;
+}
+
+#anim {
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}

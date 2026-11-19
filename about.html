@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>O mnie</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <button onclick="location.href='index.html'">Strona Główna</button>
+        <button onclick="location.href='about.html'">O mnie</button>
+        <button onclick="location.href='contact.html'">Kontakt</button>
+    </header><br><hr>
+    <main>
+        <section id="ja">
+            <h1>To ja</h1>
+            <h2>Adam Molka</h2>
+            <img src="sigma.jpg" alt="" id="selfie" onclick="selfiee()">
+        </section>
+    </main>
+    <script>
+        function selfiee() {
+            document.getElementById("selfie").style.transform = `rotate(360deg)`;
+        }
+        function typeWriter(thing) {
+            if (i < txt.length) {
+                document.getElementById(thing).innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</body>
+</html>
